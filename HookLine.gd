@@ -7,7 +7,7 @@ func _ready():
 	width = 0.3
 	default_color = Color.RED
 
-func _physics_process(delta):
+func _physics_process(_dt):
 	clear_points()
 	if Hook.is_visible():
 		var dif = Hook.ropeLength - (Hook.global_position - Player.global_position).length()
